@@ -3,10 +3,10 @@ import pw
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-workTimeUrl = "https://itriweb.itri.org.tw/itri_talk/index.aspx?tab=1"
+Url = "https://itriweb.itri.org.tw/itri_talk/index.aspx?tab=1"
 
 browser = webdriver.Chrome()
-browser.get(workTimeUrl)
+browser.get(Url)
 
 browser.find_element_by_name('USER').send_keys(pw.user)
 browser.find_element_by_name('PASSWORD').send_keys(pw.pw)
